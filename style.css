@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "M PLUS Rounded 1c"; 
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: url(./images/cerestial\ garden.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px 20px;
+}
+
+header .logo {
+    height: 100px;
+    width: 150px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    margin-left: 29px;
+    font-weight: 600px;
+    color: white;
+    transition: all 0.3s;
+}
+
+header nav ul li a:hover {
+    color: thistle;
+}
+
+header nav ul li .contact {
+    display: block;
+    background-color: teal;
+    border-radius: 15px;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    white-space: nowrap;
+    text-align: center;
+    color: white;
+}
+
+main h1 {
+    font-size: 65px;
+    margin-bottom: 15px;
+}
+
+main p {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+main .button-area {
+    margin-top: 40px;
+}
+
+.button-area button {
+    padding: 17px 30px;
+    background: rgb(222, 136, 7);
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 0.3;
+}
+
+.button-area button:hover {
+    color: thistle;
+}
+
+.button-area .free {
+    margin-right: 30px;
+}
+
+#cursor {
+    pointer-events: none;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(235, 108, 10, 0.5);
+    position: fixed;
+    top: -16px;
+    left: -16px;
+    border-radius: 50%;
+    transition: 0.15s;
+}
